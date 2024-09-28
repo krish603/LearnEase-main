@@ -23,7 +23,7 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 const { MongoClient } = require('mongodb');
 
-const uri = 'mongodb://127.0.0.1:27017/EzClass';
+const uri = 'mongodb://127.0.0.1:27017/Ezclass';
 const client = new MongoClient(uri);
 
 async function run() {

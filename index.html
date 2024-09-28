@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/skin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -470,9 +471,9 @@
 							<div class="card-header">
 								<h3 class="card-title">Overall Student Progress Report</h3>
 							</div>
-							<div class="card-body">
-								 <div id="morris_bar_2" class="morris_chart_height"></div>
-							</div>
+							<div class="chart-container">
+                                <canvas id="studentMarksChart"></canvas>
+                            </div>
 						</div>
 					</div>
 					<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12">
@@ -1007,7 +1008,9 @@
     <script src="vendor/svganimation/vivus.min.js"></script>
     <script src="vendor/svganimation/svg.animation.js"></script>
     <script src="js/styleSwitcher.js"></script>
+    <script src="js/script.js"></script>
 
+    
 		
 	
 </body>

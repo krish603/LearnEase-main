@@ -26862,4 +26862,22 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
       display: none;
     }
 
+    canvas {
+      width: 100% !important;
+      height: 400px !important;
+  }
+
+  .chart-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+      width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

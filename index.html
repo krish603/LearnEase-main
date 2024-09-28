@@ -9,16 +9,10 @@
     <title>EzClass</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <link rel="stylesheet" href="vendor/jqvmap/css/jqvmap.min.css">
-	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
-	<!-- Summernote -->
-    <link href="vendor/summernote/summernote.css" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skin-3.css">
-
+	<link rel="stylesheet" href="css/skin.css">
 </head>
-
 <body>
 
     <!--*******************
@@ -44,10 +38,10 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="images/logo-white-3.png" alt="">
-                <img class="logo-compact" src="images/logo-text-white.png" alt="">
-                <img class="brand-title" src="images/logo-text-white.png" alt="">
+            <a href="index-2.html" class="brand-logo">
+                <!-- <img class="logo-abbr" src="images/logo-white-2.png" alt=""> -->
+                <img class="logo-compact" src="images/EzCLASS.png" alt="">
+                <img class="brand-title" src="images/EzCLASS.png" alt="">
             </a>
 
             <div class="nav-control">
@@ -68,7 +62,7 @@
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
-                            <div class="search_bar dropdown">
+                            <!-- <div class="search_bar dropdown">
                                 <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
                                     <i class="mdi mdi-magnify"></i>
                                 </span>
@@ -77,7 +71,7 @@
                                         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                                     </form>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <ul class="navbar-nav header-right">
@@ -178,15 +172,15 @@
             <div class="dlabnav-scroll">
                 <ul class="metismenu" id="menu">
                     <li class="nav-label first">Main Menu</li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                    <li><a href="index-2.html" aria-expanded="false">
 							<i class="la la-home"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
-                        <ul aria-expanded="false">
+                        <!-- <ul aria-expanded="false">
                             <li><a href="index.html">Dashboard 1</a></li>
                             <li><a href="index-2.html">Dashboard 2</a></li>
                             <li><a href="index-3.html">Dashboard 3</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
 					<li><a class="ai-icon" href="event-management.html" aria-expanded="false">
 							<i class="la la-calendar"></i>
@@ -306,7 +300,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <!-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="la la-signal"></i>
 							<span class="nav-text">Charts</span>
 						</a>
@@ -403,7 +397,7 @@
                             </li>
                             <li><a href="page-lock-screen.html">Lock Screen</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 				</ul>
             </div>
         </div>
@@ -411,7 +405,7 @@
             Sidebar end
         ***********************************-->
 		
-        <!--**********************************
+		<!--**********************************
             Content body start
         ***********************************-->
         <div class="content-body">
@@ -419,405 +413,569 @@
             <div class="container-fluid">
 				    
                 <div class="row">
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-primary">
-							<div class="card-body">
-								<div class="media">
-									<span class="mr-3">
-										<i class="la la-users"></i>
-									</span>
-									<div class="media-body text-white">
-										<p class="mb-1">Total Students</p>
-										<h3 class="text-white">3280</h3>
-										<div class="progress mb-2 bg-white">
-                                            <div class="progress-bar progress-animated bg-light" style="width: 80%"></div>
-                                        </div>
+					<div class="col-xl-6 col-xxl-6 col-sm-12">
+						<div class="row">
+							<div class="col-xl-6 col-xxl-6 col-sm-6">
+								<div class="widget-stat card">
+									<div class="card-body">
+										<h4 class="card-title">Total Students</h4>
+										<h3>3280</h3>
+										<div class="progress mb-2">
+											<div class="progress-bar progress-animated bg-primary" style="width: 80%"></div>
+										</div>
 										<small>80% Increase in 20 Days</small>
 									</div>
 								</div>
 							</div>
-						</div>
-                    </div>
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-warning">
-							<div class="card-body">
-								<div class="media">
-									<span class="mr-3">
-										<i class="la la-user"></i>
-									</span>
-									<div class="media-body text-white">
-										<p class="mb-1">New Students</p>
-										<h3 class="text-white">245</h3>
-										<div class="progress mb-2 bg-white">
-                                            <div class="progress-bar progress-animated bg-light" style="width: 50%"></div>
-                                        </div>
+							<div class="col-xl-6 col-xxl-6 col-sm-6">
+								<div class="widget-stat card">
+									<div class="card-body">
+										<h4 class="card-title">Total Faculties</h4>
+										<h3>245</h3>
+										<div class="progress mb-2">
+											<div class="progress-bar progress-animated bg-warning" style="width: 50%"></div>
+										</div>
 										<small>50% Increase in 25 Days</small>
 									</div>
 								</div>
 							</div>
-						</div>
-                    </div>
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-secondary">
-							<div class="card-body">
-								<div class="media">
-									<span class="mr-3">
-										<i class="la la-graduation-cap"></i>
-									</span>
-									<div class="media-body text-white">
-										<p class="mb-1">Total Course</p>
-										<h3 class="text-white">28</h3>
-										<div class="progress mb-2 bg-white">
-                                            <div class="progress-bar progress-animated bg-light" style="width: 76%"></div>
-                                        </div>
+							<div class="col-xl-6 col-xxl-6 col-sm-6">
+								<div class="widget-stat card">
+									<div class="card-body">
+										<h4 class="card-title">Total Courses</h4>
+										<h3>28</h3>
+										<div class="progress mb-2">
+											<div class="progress-bar progress-animated bg-red" style="width: 76%"></div>
+										</div>
 										<small>76% Increase in 20 Days</small>
 									</div>
 								</div>
 							</div>
-						</div>
-                    </div>
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-danger">
-							<div class="card-body">
-								<div class="media">
-									<span class="mr-3">
-										<i class="la la-dollar"></i>
-									</span>
-									<div class="media-body text-white">
-										<p class="mb-1">Fees Collection</p>
-										<h3 class="text-white">25160$</h3>
-										<div class="progress mb-2 bg-white">
-                                            <div class="progress-bar progress-animated bg-light" style="width: 30%"></div>
-                                        </div>
+							<div class="col-xl-6 col-xxl-6 col-sm-6">
+								<div class="widget-stat card">
+									<div class="card-body">
+										<h4 class="card-title">Fees Collection</h4>
+										<h3>₹251600</h3>
+										<div class="progress mb-2">
+											<div class="progress-bar progress-animated bg-success" style="width: 30%"></div>
+										</div>
 										<small>30% Increase in 30 Days</small>
 									</div>
 								</div>
 							</div>
 						</div>
-                    </div>
-					<div class="col-xl-6 col-xxl-6 col-lg-12 col-sm-12">
+                    </div>					
+					<div class="col-xl-6 col-xxl-6 col-sm-12">
 						<div class="card">
 							<div class="card-header">
-								<h3 class="card-title">University Survey</h3>
+								<h3 class="card-title">Overall Student Progress Report</h3>
 							</div>
 							<div class="card-body">
-								<div id="morris_bar_stalked" class="morris_chart_height" style="height: 300px !important;"></div>
+								 <div id="morris_bar_2" class="morris_chart_height"></div>
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
+					<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12">
 						<div class="card">
-							<div class="card-header">
-								<h3 class="card-title">Donught Chart</h3>
-							</div>
-							<div class="card-body">
-								<div id="morris_donught_2" class="morris_chart_height" style="height: 300px !important;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="card">
-							<div class="card-header">
-								<h3 class="card-title">University Survey</h3>
-							</div>
-							<div class="card-body">
-								<div id="morris_area" class="morris_chart_height" style="height: 300px !important;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-md-6">
-						<div class="card">
-							<img class="img-fluid" src="images/courses/pic1.jpg" alt="">
-							<div class="card-body">
-								<h4><a href="about-courses.html">Why is Early Education Essential?</a></h4>
-								<ul class="list-group mb-3 list-group-flush">
-									<li class="list-group-item px-0 border-top-0 d-flex justify-content-between"><span class="mb-0 text-muted">April 23</span>
-										<a href="javascript:void(0);"><i class="la la-heart-o mr-1"></i><strong>230</strong></a></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span class="mb-0">Duration :</span><strong>12 Months</strong></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span class="mb-0">Professor :</span><strong>Jack Ronan</strong></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span><i class="fa fa-graduation-cap text-primary mr-2"></i>Student</span><strong>+120</strong></li>
-								</ul>
-								<a href="about-courses.html" class="btn btn-primary">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-md-6">
-						<div class="card">
-							<img class="img-fluid" src="images/courses/pic2.jpg" alt="">
-							<div class="card-body">
-								<h4><a href="about-courses.html">The Shocking Revelation of Education.</a></h4>
-								<ul class="list-group mb-3 list-group-flush">
-									<li class="list-group-item px-0 border-top-0 d-flex justify-content-between"><span class="mb-0 text-muted">April 23</span>
-										<a href="javascript:void(0);"><i class="la la-heart-o mr-1"></i><strong>230</strong></a></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span class="mb-0">Duration :</span><strong>12 Months</strong></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span class="mb-0">Professor :</span><strong>Jimmy Morris</strong></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span><i class="fa fa-graduation-cap text-primary mr-2"></i>Student</span><strong>+120</strong></li>
-								</ul>
-								<a href="about-courses.html" class="btn btn-primary">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-md-6">
-						<div class="card">
-							<img class="img-fluid" src="images/courses/pic3.jpg" alt="">
-							<div class="card-body">
-								<h4><a href="about-courses.html">Five Things Nobody Told You About</a></h4>
-								<ul class="list-group mb-3 list-group-flush">
-									<li class="list-group-item px-0 border-top-0 d-flex justify-content-between"><span class="mb-0 text-muted">April 23</span>
-										<a href="javascript:void(0);"><i class="la la-heart-o mr-1"></i><strong>230</strong></a></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span class="mb-0">Duration :</span><strong>12 Months</strong></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span class="mb-0">Professor :</span><strong>Konne Backfield</strong></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span><i class="fa fa-graduation-cap text-primary mr-2"></i>Student</span><strong>+120</strong></li>
-								</ul>
-								<a href="about-courses.html" class="btn btn-primary">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-md-6">
-						<div class="card">
-							<img class="img-fluid" src="images/courses/pic4.jpg" alt="">
-							<div class="card-body">
-								<h4><a href="about-courses.html">Learn Python – Interactive Python Tutorial</a></h4>
-								<ul class="list-group mb-3 list-group-flush">
-									<li class="list-group-item px-0 border-top-0 d-flex justify-content-between"><span class="mb-0 text-muted">April 23</span>
-										<a href="javascript:void(0);"><i class="la la-heart-o mr-1"></i><strong>230</strong></a></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span class="mb-0">Duration :</span><strong>12 Months</strong></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span class="mb-0">Professor :</span><strong>Nashid Martines</strong></li>
-									<li class="list-group-item px-0 d-flex justify-content-between">
-										<span><i class="fa fa-graduation-cap text-primary mr-2"></i>Student</span><strong>+120</strong></li>
-								</ul>
-								<a href="about-courses.html" class="btn btn-primary">Read More</a>
+                            <div class="card-header">
+                                <h4 class="card-title">Professors List</h4>
+                            </div>
+                            <div class="card-body">
+								<div class="media mb-3 align-items-center border-bottom pb-3">
+                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic1.jpg">
+                                    <div class="media-body">
+                                        <h5 class="mb-0 text-pale-sky">Theodore Handle <small class="text-muted">( B.Com )</small></h5>
+                                        <small class="text-primary mb-0">Available</small>
+									</div>
+								</div>
+								<div class="media mb-3 align-items-center border-bottom pb-3">
+                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic2.jpg">
+                                    <div class="media-body">
+                                        <h5 class="mb-0 text-pale-sky">Bess Willis <small class="text-muted">( M.Com )</small></h5>
+                                        <small class="text-danger mb-0">Not Available</small>
+									</div>
+								</div>
+								<div class="media mb-3 align-items-center border-bottom pb-3">
+                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic3.jpg">
+                                    <div class="media-body">
+                                        <h5 class="mb-0 text-pale-sky">James Jones <small class="text-muted">( M.Tach  )</small></h5>
+                                        <small class="text-primary mb-0">Available</small>
+									</div>
+								</div>
+								<div class="media mb-3 align-items-center border-bottom pb-3">
+                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic4.jpg">
+                                    <div class="media-body">
+                                        <h5 class="mb-0 text-pale-sky">Smith Watson <small class="text-muted">( B.Tach  )</small></h5>
+                                        <small class="text-danger mb-0">Not Available</small>
+									</div>
+								</div>
+								<div class="media mb-2 align-items-center border-bottom pb-3">
+                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic5.jpg">
+                                    <div class="media-body">
+                                        <h5 class="mb-0 text-pale-sky">Morese Sharpe <small class="text-muted">( B.A, M.A )</small></h5>
+                                        <small class="text-primary mb-0">Available</small>
+									</div>
+								</div>
+								<div class="text-center pt-3">
+									<a href="all-professors.html" class="btn btn-primary btn-rounded btn px-5 btn-lg">View All</a>
+								</div>
 							</div>
 						</div>
 					</div>
 					
-					<div class="col-xl-6 col-xxl-6 col-lg-6 col-md-12 col-sm-12">
-						<div class="card">
-                            <div class="card-body">
-								<form action="#" method="post">
-									<div class="form-group">
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text">To</span>
-											</div>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text">Subject</span>
-											</div>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="summernote"></div>
-									</div>
-									<div class="row align-items-center">
-										<div class="col-lg-6">
-											<div class="fallback w-100">
-												<input type="file" class="dropify" data-default-file="">
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<button type="button" class="btn btn-primary float-right">
-												Send <i class="fa fa-paper-plane-o"></i>
-											</button>									
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-6 col-xxl-6 col-lg-6 col-md-12 col-sm-12">
+					<div class="col-xl-8 col-lg-8 col-xxl-8 col-md-12">
 						<div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Exam Toppers</h4>
+                                <h4 class="card-title">Student List</h4>
                             </div>
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table verticle-middle">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Roll No.</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Status</th>
-                                                <th scope="col">Edit</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>542</td>
-												<td>Jack Ronan</td>
-                                                <td><span id="widget_sparklinedash"><canvas></canvas></span></td>
-                                                <td>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>243 </td>
-                                                <td>Jimmy Morris</td>
-                                                <td><div class="ico-sparkline"><div id="widget_spark-bar"></div></div></td>
-												<td>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>452 </td>
-                                                <td>Nashid Martines</td>
-                                                <td><div class="ico-sparkline"><div id="widget_StackedBarChart"></div></div></td>
-												<td>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>124</td>
-                                                <td>Roman Aurora</td>
-                                                <td> <div class="ico-sparkline"> <div id="widget_tristate"></div></div></td>
-												<td>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>234</td>
-                                                <td>Samantha</td>
-                                                <td> <div class="ico-sparkline"> <div id="widget_composite-bar"></div> </div> </td>
-												<td>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">New Student List</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive recentOrderTable">
+							    <div class="table-responsive recentOrderTable">
                                     <table class="table verticle-middle table-responsive-md">
                                         <thead>
                                             <tr>
-                                                <th scope="col">No.</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Assigned Professor</th>
-                                                <th scope="col">Date Of Admit</th>
-                                                <th scope="col">Status</th>
-                                                <th scope="col">Subject</th>
-                                                <th scope="col">Fees</th>
-                                                <th scope="col">Edit</th>
+                                                <th scope="col">
+                                                    <div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="checkAll">
+														<label class="custom-control-label" for="checkAll"></label>
+													</div>
+                                                </th>
+                                                <th scope="col">Student Name</th>
+                                                <th scope="col">Assigned Coach</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>01</td>
-												<td>Jack Ronan</td>
-                                                <td>Airi Satou</td>
-                                                <td>01 August 2020</td>
-                                                <td><span class="badge badge-rounded badge-primary">Checkin</span></td>
-                                                <td>Commerce</td>
-                                                <td>120$</td>
                                                 <td>
-                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="checkbox2">
+														<label class="custom-control-label" for="checkbox2"></label>
+													</div>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td>02 </td>
-                                                <td>Jimmy Morris</td>
                                                 <td>Angelica Ramos</td>
-												<td>31 July 2020</td>
-                                                <td><span class="badge badge-rounded badge-warning">Panding</span></td>
-                                                <td>Mechanical</td>
-                                                <td>120$</td>
-                                                <td>
-                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>03 </td>
-                                                <td>Nashid Martines</td>
                                                 <td>Ashton Cox</td>
-												<td>30 July 2020</td>
-                                                <td><span class="badge badge-rounded badge-danger">Canceled</span></td>
-                                                <td>Science</td>
-                                                <td>520$</td>
+                                                <td>12 August 2020</td>
+                                                <td>10:15</td>
                                                 <td>
-                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <div class="dropdown custom-dropdown mb-0">
+                                                        <div data-toggle="dropdown">
+                                                            <i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Accept</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>04</td>
-                                                <td>Roman Aurora</td>
-                                                <td>Cara Stevens</td>
-												<td>29 July 2020</td>
-                                                <td><span class="badge badge-rounded badge-success">Checkin</span></td>
-                                                <td>Arts</td>
-                                                <td>220$</td>
                                                 <td>
-                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="checkbox3">
+														<label class="custom-control-label" for="checkbox3"></label>
+													</div>
+                                                </td>
+                                                <td>Bradley Greer</td>
+                                                <td>Brenden Wagner</td>
+                                                <td>11 July 2020</td>
+                                                <td>10:00</td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+                                                        <div data-toggle="dropdown">
+                                                            <i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Accept</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>05</td>
-                                                <td>Samantha</td>
-                                                <td>Bruno Nash </td>
-												<td>28 July 2020</td>
-                                                <td><span class="badge badge-rounded badge-success">Checkin</span></td>
-                                                <td>Maths</td>
-                                                <td>130$</td>
                                                 <td>
-                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="checkbox4">
+														<label class="custom-control-label" for="checkbox4"></label>
+													</div>
+                                                </td>
+                                                <td>Cedric Kelly</td>
+                                                <td>Brielle Williamson</td>
+                                                <td>10 May 2020</td>
+                                                <td>09:45</td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+                                                        <div data-toggle="dropdown">
+                                                            <i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Accept</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="checkbox5">
+														<label class="custom-control-label" for="checkbox5"></label>
+													</div>
+                                                </td>
+                                                <td>Caesar Vance</td>
+                                                <td>Herrod Chandler</td>
+                                                <td>09 April 2020</td>
+                                                <td>09:30</td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+                                                        <div data-toggle="dropdown">
+                                                            <i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Accept</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="checkbox6">
+														<label class="custom-control-label" for="checkbox6"></label>
+													</div>
+                                                </td>
+                                                <td>Rhona Davidson</td>
+                                                <td>Sonya Frost</td>
+                                                <td>08 March 2020</td>
+                                                <td>09:15</td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+                                                        <div data-toggle="dropdown">
+                                                            <i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Accept</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+											<tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="checkbox7">
+														<label class="custom-control-label" for="checkbox7"></label>
+													</div>
+                                                </td>
+                                                <td>Bradley Greer</td>
+                                                <td>Brenden Wagner</td>
+                                                <td>11 July 2020</td>
+                                                <td>10:00</td>
+                                                <td>
+                                                    <div class="dropdown custom-dropdown mb-0">
+                                                        <div data-toggle="dropdown">
+                                                            <i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Accept</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <div class="text-center pt-3">
+                                        <a href="all-students.html" class="btn btn-primary btn-rounded btn px-5 btn-lg">View All</a>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-xl-4 col-lg-4 col-xxl-4 col-md-12">
+						<div class="card">
+                            <div class="card-header">    
+								<h4 class="card-title">Gold medal</h4>
+								<small class="text-success"><i class="fa fa-caret-up"></i> 20% High then last mont</small>
+							</div>
+                            <div class="card-body pb-0">
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <h6 class="font-weight-normal">Overall Growth</h6>
+                                        <strong>82.24%</strong>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="font-weight-normal">Montly</h6>
+                                        <strong>12.24 %</strong>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="font-weight-normal">Day</h6>
+                                        <strong>42.24%</strong>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="chart-wrapper">
+                               <span class="peity-line" data-width="100%">6,5,8,4,3,8,4,3,6,5,9,5,8,3,4,8,9,8,5,7</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-				
+					</div>
+					<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-6">
+						<div class="card">
+                            <div class="card-header">    
+								<h4 class="card-title">Silver medal</h4>
+								<small class="text-success"><i class="fa fa-caret-up"></i> 20% High then last mont</small>
+							</div>
+                            <div class="card-body pb-0">
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <h6 class="font-weight-normal">Overall Growth</h6>
+                                        <strong>82.24%</strong>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="font-weight-normal">Montly</h6>
+                                        <strong>12.24 %</strong>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="font-weight-normal">Day</h6>
+                                        <strong>42.24%</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-wrapper">
+                                <span class="peity-line-2" data-width="100%">9,3,7,8,6,7,3,3,7,4,6,8,3,4,7,3,4,7,8,5</span>
+                            </div>
+                        </div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-xxl-4 col-md-6">
+						<div class="card">
+                            <div class="card-header">    
+								<h4 class="card-title">Bronze medal</h4>
+								<small class="text-success"><i class="fa fa-caret-up"></i> 20% High then last mont</small>
+							</div>
+                            <div class="card-body pb-0">
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <h6 class="font-weight-normal">Overall Growth</h6>
+                                        <strong>82.24%</strong>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="font-weight-normal">Montly</h6>
+                                        <strong>12.24 %</strong>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="font-weight-normal">Day</h6>
+                                        <strong>42.24%</strong>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="chart-wrapper">
+                               <span class="peity-line-3" data-width="100%">3,8,3,7,8,6,3,4,7,3,7,9,6,3,7,6,7,3,4,2</span>
+                            </div> -->
+                        </div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
+						<div class="card profile-tab">
+                            <div class="card-header">
+                                <h4 class="card-title">Salary Status</h4>
+                            </div>
+							<div class="card-body custom-tab-1">
+								<ul class="nav nav-tabs mb-3">
+									<li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link pb-2 active show">Professors</a></li>
+									<li class="nav-item"><a href="#about-me" data-toggle="tab" class="nav-link pb-2">Librarian</a></li>
+									<li class="nav-item"><a href="#profile-settings" data-toggle="tab" class="nav-link pb-2">Other Staff</a></li>
+								</ul>
+								<div class="tab-content">
+									<div id="my-posts" class="tab-pane fade active show">
+										<div class="table-responsive">
+											<table class="table table-responsive-md">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">Name</th>
+														<th scope="col">Status</th>
+														<th scope="col">Date</th>
+														<th scope="col">Ammount</th>
+														<th scope="col">Transaction ID</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><img src="images/profile/education/pic1.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Angelica Ramos</td>
+														<td><span class="badge badge-rounded badge-success">Paid</span></td>
+														<td>12 August 2020</td>
+														<td>$100</td>
+														<td>#42317</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic2.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Bradley Greer</td>
+														<td><span class="badge badge-rounded badge-danger">Unpaid</span></td>
+														<td>11 July 2020</td>
+														<td>$200</td>
+														<td>#54682</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic3.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Cedric Kelly</td>
+														<td><span class="badge badge-rounded badge-warning">Pending</span></td>
+														<td>10 May 2020</td>
+														<td>$400</td>
+														<td>#57894</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic4.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Caesar Vance</td>
+														<td><span class="badge badge-rounded badge-danger">Unpaid</span></td>
+														<td>09 April 2020</td>
+														<td>$300</td>
+														<td>#57864</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic5.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Rhona Davidson</td>
+														<td><span class="badge badge-rounded badge-warning">Pending</span></td>
+														<td>08 March 2020</td>
+														<td>$500</td>
+														<td>#56387</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div id="about-me" class="tab-pane fade">
+										<div class="table-responsive">
+											<table class="table table-responsive-md">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">Name</th>
+														<th scope="col">Status</th>
+														<th scope="col">Date</th>
+														<th scope="col">Ammount</th>
+														<th scope="col">Transaction ID</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><img src="images/profile/education/pic6.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Angelica Ramos</td>
+														<td><span class="badge badge-rounded badge-success">Paid</span></td>
+														<td>12 August 2020</td>
+														<td>$100</td>
+														<td>#42317</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic7.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Bradley Greer</td>
+														<td><span class="badge badge-rounded badge-danger">Unpaid</span></td>
+														<td>11 July 2020</td>
+														<td>$200</td>
+														<td>#54682</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic8.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Cedric Kelly</td>
+														<td><span class="badge badge-rounded badge-warning">Pending</span></td>
+														<td>10 May 2020</td>
+														<td>$400</td>
+														<td>#57894</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic10.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Caesar Vance</td>
+														<td><span class="badge badge-rounded badge-danger">Unpaid</span></td>
+														<td>09 April 2020</td>
+														<td>$300</td>
+														<td>#57864</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic9.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Rhona Davidson</td>
+														<td><span class="badge badge-rounded badge-warning">Pending</span></td>
+														<td>08 March 2020</td>
+														<td>$500</td>
+														<td>#56387</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div id="profile-settings" class="tab-pane fade">
+										<div class="table-responsive">
+											<table class="table table-responsive-md">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">Name</th>
+														<th scope="col">Status</th>
+														<th scope="col">Date</th>
+														<th scope="col">Ammount</th>
+														<th scope="col">Transaction ID</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><img src="images/profile/education/pic5.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Angelica Ramos</td>
+														<td><span class="badge badge-rounded badge-success">Paid</span></td>
+														<td>12 August 2020</td>
+														<td>$100</td>
+														<td>#42317</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic8.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Bradley Greer</td>
+														<td><span class="badge badge-rounded badge-danger">Unpaid</span></td>
+														<td>11 July 2020</td>
+														<td>$200</td>
+														<td>#54682</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic6.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Cedric Kelly</td>
+														<td><span class="badge badge-rounded badge-warning">Pending</span></td>
+														<td>10 May 2020</td>
+														<td>$400</td>
+														<td>#57894</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic2.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Caesar Vance</td>
+														<td><span class="badge badge-rounded badge-danger">Unpaid</span></td>
+														<td>09 April 2020</td>
+														<td>$300</td>
+														<td>#57864</td>
+													</tr>
+													<tr>
+														<td><img src="images/profile/education/pic7.jpg" class="rounded-circle" width="35" alt=""></td>
+														<td>Rhona Davidson</td>
+														<td><span class="badge badge-rounded badge-warning">Pending</span></td>
+														<td>08 March 2020</td>
+														<td>$500</td>
+														<td>#56387</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
         </div>
         <!--**********************************
             Content body end
-        ***********************************-->
-
-
-         
-
-		<!--**********************************
-           Support ticket button start
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button end
         ***********************************-->
 
 
@@ -832,32 +990,25 @@
     <!-- Required vendors -->
     <script src="vendor/global/global.min.js"></script>
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="js/custom.min.js"></script>
-    <script src="js/dlabnav-init.js"></script>	
-	
-	<!-- Chart sparkline plugin files -->
-    <script src="vendor/jquery-sparkline/jquery.sparkline.min.js"></script>
-	<script src="js/plugins-init/sparkline-init.js"></script>
-	
-	<!-- Chart Morris plugin files -->
+	<script src="js/custom.min.js"></script>
+		
+    <!-- Chart Morris plugin files -->
     <script src="vendor/raphael/raphael.min.js"></script>
-    <script src="vendor/morris/morris.min.js"></script> 
+    <script src="vendor/morris/morris.min.js"></script>
+		
 	
-    <!-- Init file -->
-    <script src="js/plugins-init/widgets-script-init.js"></script>
+	<!-- Chart piety plugin files -->
+    <script src="vendor/peity/jquery.peity.min.js"></script>
 	
-	<!-- Demo scripts -->
-    <script src="js/dashboard/dashboard.js"></script>
-	
-	<!-- Summernote -->
-    <script src="vendor/summernote/js/summernote.min.js"></script>
-    <!-- Summernote init -->
-    <script src="js/plugins-init/summernote-init.js"></script>
+		<!-- Demo scripts -->
+    <script src="js/dashboard/dashboard-2.js"></script>
 	
 	<!-- Svganimation scripts -->
     <script src="vendor/svganimation/vivus.min.js"></script>
     <script src="vendor/svganimation/svg.animation.js"></script>
     <script src="js/styleSwitcher.js"></script>
+
 		
+	
 </body>
 </html>

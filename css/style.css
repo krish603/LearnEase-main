@@ -26858,4 +26858,8 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         opacity: 0.8;
     }
 
+    .sidebar-right {
+      display: none;
+    }
+
 /*# sourceMappingURL=style.css.map */

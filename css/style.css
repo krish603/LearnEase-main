@@ -26830,29 +26830,28 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
       .attendance-table {
         margin-top: 10px;
-        margin-left: 10px;
         display: grid;
-        grid-template-columns: repeat(52, 9px); /* 52 columns for 52 weeks */
-        grid-template-rows: repeat(7, 9px); /* 7 rows for 7 days */
+        grid-template-columns: repeat(52, 10.5px); /* 52 columns for 52 weeks */
+        grid-template-rows: repeat(7, 10.5px); /* 7 rows for 7 days */
         gap: 8px;
     }
 
     .day {
-        width: 10px;
-        height: 10px;
-        border-radius: 2.5px;
+        width: 13px;
+        height: 13px;
+        border-radius: 2.5px; 
     }
 
     .present {
-        background-color: #00FF00; /* Green for present */
+        background-color: #00bf63; /*Green for present*/
     }
 
     .absent {
-        background-color: #FF0000; /* Red for absent */
+        background-color: #FF0021; /* Red for absent */
     }
 
     .holiday {
-        background-color: #808080; /* Grey for official holiday */
+        background-color: #a6a6a6; /* Grey for official holiday */
     }
 
     .day:hover {

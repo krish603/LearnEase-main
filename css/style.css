@@ -26828,4 +26828,35 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-theme-version="dark"] .footer .copyright p {
       color: #fff; }
 
+      .attendance-table {
+        margin-top: 10px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(52, 9px); /* 52 columns for 52 weeks */
+        grid-template-rows: repeat(7, 9px); /* 7 rows for 7 days */
+        gap: 8px;
+    }
+
+    .day {
+        width: 10px;
+        height: 10px;
+        border-radius: 2.5px;
+    }
+
+    .present {
+        background-color: #00FF00; /* Green for present */
+    }
+
+    .absent {
+        background-color: #FF0000; /* Red for absent */
+    }
+
+    .holiday {
+        background-color: #808080; /* Grey for official holiday */
+    }
+
+    .day:hover {
+        opacity: 0.8;
+    }
+
 /*# sourceMappingURL=style.css.map */

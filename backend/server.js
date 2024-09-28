@@ -36,4 +36,7 @@ async function run() {
     }
 }
 
+const dashboardRoute = require('./routes/dashboard');
+app.use('/api/dashboard', dashboardRoute);
+
 run().catch(console.dir);

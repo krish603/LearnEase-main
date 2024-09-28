@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
 	
 	<meta charset="utf-8">
@@ -16,34 +16,33 @@
     <script>
         // Function to fetch dashboard data from the backend
         async function fetchDashboardData() {
-            try {
-                // Fetch data from the API
-                const response = await fetch('/api/dashboard');
-                const data = await response.json();
-        
-                // Update the HTML elements with fetched data
-                document.getElementById('totalStudents').innerText = data.totalStudents;
-                document.getElementById('studentsProgressBar').style.width = data.studentGrowth + '%';
-                document.getElementById('studentsGrowth').innerText = data.studentGrowth + '% Increase in 20 Days';
-        
-                document.getElementById('totalFaculties').innerText = data.totalFaculties;
-                document.getElementById('facultiesProgressBar').style.width = data.facultyGrowth + '%';
-                document.getElementById('facultiesGrowth').innerText = data.facultyGrowth + '% Increase in 25 Days';
-        
-                document.getElementById('totalCourses').innerText = data.totalCourses;
-                document.getElementById('coursesProgressBar').style.width = data.courseGrowth + '%';
-                document.getElementById('coursesGrowth').innerText = data.courseGrowth + '% Increase in 20 Days';
-        
-                document.getElementById('feesCollection').innerText = '₹' + data.feesCollection;
-                document.getElementById('feesProgressBar').style.width = data.feesGrowth + '%';
-                document.getElementById('feesGrowth').innerText = data.feesGrowth + '% Increase in 30 Days';
-            } catch (error) {
-                console.error('Error fetching dashboard data:', error);
-            }
-        }
-        
-        // Call the function when the page loads
-        window.onload = fetchDashboardData;
+    try {
+        console.log('Fetching dashboard data...');  // Debugging log
+        const response = await fetch('/api/dashboard');
+        const data = await response.json();
+        console.log('Data received:', data);  // Log the data received
+
+        document.getElementById('totalStudents').innerText = data.totalStudents;
+        document.getElementById('studentsProgressBar').style.width = data.studentGrowth + '%';
+        document.getElementById('studentsGrowth').innerText = data.studentGrowth + '% Increase in 20 Days';
+
+        document.getElementById('totalFaculties').innerText = data.totalFaculties;
+        document.getElementById('facultiesProgressBar').style.width = data.facultyGrowth + '%';
+        document.getElementById('facultiesGrowth').innerText = data.facultyGrowth + '% Increase in 25 Days';
+
+        document.getElementById('totalCourses').innerText = data.totalCourses;
+        document.getElementById('coursesProgressBar').style.width = data.courseGrowth + '%';
+        document.getElementById('coursesGrowth').innerText = data.courseGrowth + '% Increase in 20 Days';
+
+        document.getElementById('feesCollection').innerText = '₹' + data.feesCollection;
+        document.getElementById('feesProgressBar').style.width = data.feesGrowth + '%';
+        document.getElementById('feesGrowth').innerText = data.feesGrowth + '% Increase in 30 Days';
+    } catch (error) {
+        console.error('Error fetching dashboard data:', error);  // Log error
+    }
+}
+
+window.onload = fetchDashboardData;
         </script>
         
     

@@ -15,15 +15,21 @@ connectDB();
 app.use(express.json());
 
 // Define Routes
-app.use('/api/users', require('./routes/user'));
+app.use('backend/models/users', require('./backend/routes/user'));
 
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
+const dashboardRoute = require('./backend/routes/dashboard');
+app.use('backend/api/dashboard', dashboardRoute);
+
+const cors = require('cors');
+app.use(cors());
+
 const { MongoClient } = require('mongodb');
 
-const uri = 'mongodb://127.0.0.1:27017/Ezclass';
+const uri = 'mongodb://127.0.0.1:27017/EzClass';
 const client = new MongoClient(uri);
 
 async function run() {
@@ -35,8 +41,5 @@ async function run() {
         await client.close();
     }
 }
-
-const dashboardRoute = require('./routes/dashboard');
-app.use('/api/dashboard', dashboardRoute);
 
 run().catch(console.dir);

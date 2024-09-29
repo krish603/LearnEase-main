@@ -26875,7 +26875,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   .chart-container {
       width: 100%;
   }

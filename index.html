@@ -44,6 +44,29 @@
 
 window.onload = fetchDashboardData;
         </script>
+        <script>
+    // Fetch the JSON data and display the total number of students
+    fetch('students.json')
+        .then(response => response.json())
+        .then(data => {
+            const students = data.students;
+            const totalStudents = students.length;
+
+            // Update the "Total Students" field
+            document.querySelector('.totalStudents').textContent = totalStudents;
+
+            // Calculate and update the progress bar
+            const progressPercentage = (totalStudents / 100) * 100; // Example: Assuming 100 is the max number of students for full progress
+            document.getElementById('studentsProgressBar').style.width = progressPercentage + '%';
+
+            // Update the "Growth" text (as an example, assuming 10% growth per student added)
+            const growth = (totalStudents / 100) * 10; // Example growth logic
+            document.getElementById('studentsGrowth').textContent = `Growth: ${growth}%`;
+        })
+        .catch(error => console.error('Error fetching the JSON data:', error));
+</script>
+
+        
         
     
 </head>
@@ -453,7 +476,7 @@ window.onload = fetchDashboardData;
                                 <div class="widget-stat card">
                                     <div class="card-body">
                                         <h4 class="card-title">Total Students</h4>
-                                        <h3 id="totalStudents">Loading...</h3>
+                                        <h3 class="totalStudents">Loading...</h3>
                                         <div class="progress mb-2">
                                             <div id="studentsProgressBar" class="progress-bar progress-animated bg-primary" style="width: 0%"></div>
                                         </div>

@@ -120,11 +120,78 @@ window.onload = fetchDashboardData;
         document.getElementById('feesProgressBar').style.width = progressPercentage + '%';
 
         // Update the "Growth" text (as an example, assuming 10% growth per student added)
-        const growth = (totalFees / 100) * 10; // Example growth logic
+        const growth = 15; // Example growth logic
         document.getElementById('feesGrowth').textContent = `Growth: ${growth}%`;
     })
     .catch(error => console.error('Error fetching the JSON data:', error));
 
+
+    // Fetch the professors.json file and populate the professor list
+    fetch('professors.json')
+        .then(response => response.json())
+        .then(data => {
+            const professors = data.professors;
+            let output = '';
+
+            professors.forEach(professor => {
+                output += `
+                    <div class="media mb-3 align-items-center border-bottom pb-3">
+                        <img class="mr-3 rounded-circle" alt="image" width="50" src="${professor.image}">
+                        <div class="media-body">
+                            <h5 class="mb-0 text-pale-sky">${professor.name} 
+                                <small class="text-muted">( ${professor.degree} )</small>
+                            </h5>
+                            <small class="${professor.status_class} mb-0">${professor.status}</small>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Inject the generated HTML into the professor-list container
+            document.getElementById('professor-list').innerHTML = output;
+        })
+        .catch(error => console.error('Error fetching professor data:', error));   
+        
+        // Fetch the student data from the JSON file
+    fetch('student1.json')
+    .then(response => response.json())
+    .then(data => {
+        const students = data.students;
+        let tableBody = '';
+
+        // Loop through the student list and create rows dynamically
+        students.forEach((student, index) => {
+            tableBody += `
+            <tr>
+                <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="checkbox${index}">
+                        <label class="custom-control-label" for="checkbox${index}"></label>
+                    </div>
+                </td>
+                <td>${student.name}</td>
+                <td>${student.coach}</td>
+                <td>${student.date}</td>
+                <td>${student.time}</td>
+                <td>
+                    <div class="dropdown custom-dropdown mb-0">
+                        <div data-toggle="dropdown">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="javascript:void(0);">Accept</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                            <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>`;
+        });
+
+        // Inject the dynamically generated rows into the table body
+        document.querySelector('table tbody').innerHTML = tableBody;
+    })
+    .catch(error => console.error('Error fetching the JSON data:', error));
         
 </script>
 
@@ -577,11 +644,11 @@ window.onload = fetchDashboardData;
                                 <div class="widget-stat card">
                                     <div class="card-body">
                                         <h4 class="card-title">Total Fees Collected</h4>
-                                        <h3 class="totalFees">Loading...</h3>
+                                        <h3 class="totalFees">231455</h3>
                                         <div class="progress mb-2">
                                             <div id="feesProgressBar" class="progress-bar progress-animated bg-primary" style="width: 0%"></div>
                                         </div>
-                                        <small id="feesGrowth">Calculating...</small>
+                                        <small id="feesGrowth">15% Growth Report</small>
                                     </div>
                                 </div>
                             </div>
@@ -603,47 +670,14 @@ window.onload = fetchDashboardData;
                             <div class="card-header">
                                 <h4 class="card-title">Professors List</h4>
                             </div>
-                            <div class="card-body">
-								<div class="media mb-3 align-items-center border-bottom pb-3">
-                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic1.jpg">
-                                    <div class="media-body">
-                                        <h5 class="mb-0 text-pale-sky">Theodore Handle <small class="text-muted">( B.Com )</small></h5>
-                                        <small class="text-primary mb-0">Available</small>
-									</div>
-								</div>
-								<div class="media mb-3 align-items-center border-bottom pb-3">
-                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic2.jpg">
-                                    <div class="media-body">
-                                        <h5 class="mb-0 text-pale-sky">Bess Willis <small class="text-muted">( M.Com )</small></h5>
-                                        <small class="text-danger mb-0">Not Available</small>
-									</div>
-								</div>
-								<div class="media mb-3 align-items-center border-bottom pb-3">
-                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic3.jpg">
-                                    <div class="media-body">
-                                        <h5 class="mb-0 text-pale-sky">James Jones <small class="text-muted">( M.Tach  )</small></h5>
-                                        <small class="text-primary mb-0">Available</small>
-									</div>
-								</div>
-								<div class="media mb-3 align-items-center border-bottom pb-3">
-                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic4.jpg">
-                                    <div class="media-body">
-                                        <h5 class="mb-0 text-pale-sky">Smith Watson <small class="text-muted">( B.Tach  )</small></h5>
-                                        <small class="text-danger mb-0">Not Available</small>
-									</div>
-								</div>
-								<div class="media mb-2 align-items-center border-bottom pb-3">
-                                    <img class="mr-3 rounded-circle" alt="image" width="50" src="images/profile/education/pic5.jpg">
-                                    <div class="media-body">
-                                        <h5 class="mb-0 text-pale-sky">Morese Sharpe <small class="text-muted">( B.A, M.A )</small></h5>
-                                        <small class="text-primary mb-0">Available</small>
-									</div>
-								</div>
-								<div class="text-center pt-3">
-									<a href="all-professors.html" class="btn btn-primary btn-rounded btn px-5 btn-lg">View All</a>
-								</div>
-							</div>
-						</div>
+                            <div class="card-body" id="professor-list">
+                                <!-- Dynamic content will be injected here -->
+                            </div>
+                            <div class="text-center pt-3">
+                                <a href="all-professors.html" class="btn btn-primary btn-rounded btn px-5 btn-lg">View All</a>
+                            </div>
+                        </div>
+                        
 					</div>
 					
 					<div class="col-xl-8 col-lg-8 col-xxl-8 col-md-12">

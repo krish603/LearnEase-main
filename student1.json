@@ -1,0 +1,35 @@
+{
+    "students": [
+      {
+        "name": "Aman Verma",
+        "coach": "Rajesh Sharma",
+        "date": "15 September 2023",
+        "time": "10:00 AM"
+      },
+      {
+        "name": "Neha Singh",
+        "coach": "Priya Mehta",
+        "date": "12 September 2023",
+        "time": "11:00 AM"
+      },
+      {
+        "name": "Ravi Kumar",
+        "coach": "Amit Patel",
+        "date": "10 September 2023",
+        "time": "9:30 AM"
+      },
+      {
+        "name": "Sneha Gupta",
+        "coach": "Vikram Rathore",
+        "date": "9 September 2023",
+        "time": "10:45 AM"
+      },
+      {
+        "name": "Anjali Mishra",
+        "coach": "Meera Shah",
+        "date": "8 September 2023",
+        "time": "9:15 AM"
+      }
+    ]
+  }
+  

@@ -1,0 +1,51 @@
+{
+  "professors": [
+    {
+      "name": "Dr. Anil Sharma",
+      "department": "Computer Science",
+      "gender": "Male",
+      "education": "PhD in Artificial Intelligence",
+      "mobile": "+91-9876543210",
+      "email": "anil.sharma@university.in",
+      "joining_date": "2015-06-20"
+    },
+    {
+      "name": "Dr. Meena Gupta",
+      "department": "Physics",
+      "gender": "Female",
+      "education": "PhD in Quantum Mechanics",
+      "mobile": "+91-9123456789",
+      "email": "meena.gupta@university.in",
+      "joining_date": "2012-08-15"
+    },
+    {
+      "name": "Dr. Rakesh Verma",
+      "department": "Mathematics",
+      "gender": "Male",
+      "education": "PhD in Applied Mathematics",
+      "mobile": "+91-7890123456",
+      "email": "rakesh.verma@university.in",
+      "joining_date": "2018-01-10"
+    },
+    {
+      "name": "Dr. Shalini Kumar",
+      "department": "Chemistry",
+      "gender": "Female",
+      "education": "PhD in Organic Chemistry",
+      "mobile": "+91-9988776655",
+      "email": "shalini.kumar@university.in",
+      "joining_date": "2019-09-30"
+    },
+    {
+      "name": "Dr. Rajesh Rao",
+      "department": "Electrical Engineering",
+      "gender": "Male",
+      "education": "PhD in Power Systems",
+      "mobile": "+91-9098765432",
+      "email": "rajesh.rao@university.in",
+      "joining_date": "2010-12-01"
+    }
+  ]
+}
+
+

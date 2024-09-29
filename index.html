@@ -64,6 +64,68 @@ window.onload = fetchDashboardData;
             document.getElementById('studentsGrowth').textContent = `Growth: ${growth}%`;
         })
         .catch(error => console.error('Error fetching the JSON data:', error));
+
+
+        // Fetch the JSON data and display the total number of students
+    fetch('professors.json')
+    .then(response => response.json())
+    .then(data => {
+        const professors= data.professors;
+        const totalProfessors = professors.length;
+
+        // Update the "Total Students" field
+        document.querySelector('.totalProfessors').textContent = totalProfessors;
+
+        // Calculate and update the progress bar
+        const progressPercentage = (totalProfessors / 100) * 100; // Example: Assuming 100 is the max number of students for full progress
+        document.getElementById('professorProgressBar').style.width = progressPercentage + '%';
+
+        // Update the "Growth" text (as an example, assuming 10% growth per student added)
+        const growth = (totalProfessors / 100) * 10; // Example growth logic
+        document.getElementById('professorGrowth').textContent = `Growth: ${growth}%`;
+    })
+    .catch(error => console.error('Error fetching the JSON data:', error));
+
+    fetch('courses.json')
+    .then(response => response.json())
+    .then(data => {
+        const courses= data.courses;
+        const totalCourses = courses.length;
+
+        // Update the "Total Students" field
+        document.querySelector('.totalCourses').textContent = totalCourses;
+
+        // Calculate and update the progress bar
+        const progressPercentage = (totalCourses / 100) * 100; // Example: Assuming 100 is the max number of students for full progress
+        document.getElementById('coursesProgressBar').style.width = progressPercentage + '%';
+
+        // Update the "Growth" text (as an example, assuming 10% growth per student added)
+        const growth = (totalCourses / 100) * 10; // Example growth logic
+        document.getElementById('coursesGrowth').textContent = `Growth: ${growth}%`;
+    })
+    .catch(error => console.error('Error fetching the JSON data:', error));
+
+    // Fetch the JSON data and display the total number of feesCollection
+    fetch('feesCollection.json')
+    .then(response => response.json())
+    .then(data => {
+        const fees= data.fees;
+        const totalFees = fees.length;
+
+        // Update the "Total Students" field
+        document.querySelector('.totalFees').textContent = totalFees;
+
+        // Calculate and update the progress bar
+        const progressPercentage = (totalFees / 100) * 100; // Example: Assuming 100 is the max number of students for full progress
+        document.getElementById('feesProgressBar').style.width = progressPercentage + '%';
+
+        // Update the "Growth" text (as an example, assuming 10% growth per student added)
+        const growth = (totalFees / 100) * 10; // Example growth logic
+        document.getElementById('feesGrowth').textContent = `Growth: ${growth}%`;
+    })
+    .catch(error => console.error('Error fetching the JSON data:', error));
+
+        
 </script>
 
         
@@ -488,12 +550,12 @@ window.onload = fetchDashboardData;
                             <div class="col-xl-6 col-xxl-6 col-sm-6">
                                 <div class="widget-stat card">
                                     <div class="card-body">
-                                        <h4 class="card-title">Total Faculties</h4>
-                                        <h3 id="totalFaculties">Loading...</h3>
+                                        <h4 class="card-title">Total Professors</h4>
+                                        <h3 class="totalProfessors">Loading...</h3>
                                         <div class="progress mb-2">
-                                            <div id="facultiesProgressBar" class="progress-bar progress-animated bg-warning" style="width: 0%"></div>
+                                            <div id="professorProgressBar" class="progress-bar progress-animated bg-primary" style="width: 0%"></div>
                                         </div>
-                                        <small id="facultiesGrowth">Calculating...</small>
+                                        <small id="professorGrowth">Calculating...</small>
                                     </div>
                                 </div>
                             </div>
@@ -502,9 +564,9 @@ window.onload = fetchDashboardData;
                                 <div class="widget-stat card">
                                     <div class="card-body">
                                         <h4 class="card-title">Total Courses</h4>
-                                        <h3 id="totalCourses">Loading...</h3>
+                                        <h3 class="totalCourses">Loading...</h3>
                                         <div class="progress mb-2">
-                                            <div id="coursesProgressBar" class="progress-bar progress-animated bg-red" style="width: 0%"></div>
+                                            <div id="coursesProgressBar" class="progress-bar progress-animated bg-primary" style="width: 0%"></div>
                                         </div>
                                         <small id="coursesGrowth">Calculating...</small>
                                     </div>
@@ -514,10 +576,10 @@ window.onload = fetchDashboardData;
                             <div class="col-xl-6 col-xxl-6 col-sm-6">
                                 <div class="widget-stat card">
                                     <div class="card-body">
-                                        <h4 class="card-title">Fees Collection</h4>
-                                        <h3 id="feesCollection">Loading...</h3>
+                                        <h4 class="card-title">Total Fees Collected</h4>
+                                        <h3 class="totalFees">Loading...</h3>
                                         <div class="progress mb-2">
-                                            <div id="feesProgressBar" class="progress-bar progress-animated bg-success" style="width: 0%"></div>
+                                            <div id="feesProgressBar" class="progress-bar progress-animated bg-primary" style="width: 0%"></div>
                                         </div>
                                         <small id="feesGrowth">Calculating...</small>
                                     </div>

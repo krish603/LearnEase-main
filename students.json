@@ -1,0 +1,29 @@
+{
+    "students": [
+      {
+        "name": "John Doe",
+        "designation": "Junior Developer",
+        "mobile": "123-456-7890",
+        "email": "john.doe@example.com",
+        "address": "123 Main St, Cityville",
+        "joining_date": "2023-01-15"
+      },
+      {
+        "name": "Jane Smith",
+        "designation": "Data Analyst",
+        "mobile": "987-654-3210",
+        "email": "jane.smith@example.com",
+        "address": "456 Maple Ave, Townsville",
+        "joining_date": "2022-07-01"
+      },
+      {
+        "name": "Alice Johnson",
+        "designation": "Project Manager",
+        "mobile": "555-123-4567",
+        "email": "alice.johnson@example.com",
+        "address": "789 Oak St, Villageville",
+        "joining_date": "2021-10-23"
+      }
+    ]
+  }
+      
